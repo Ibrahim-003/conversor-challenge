@@ -87,7 +87,7 @@ public class Main {
                 GenerarURL url = new GenerarURL(abreviaturaMonedaBase, abreviaturaTipoDeCambio, montoAConvertir);
                 APIConnection apiConnection = new APIConnection(url.getUrl());
                 ConversionDivisaExAPI divisaData = apiConnection.getData();
-                
+
                 System.out.println("""
                         *******************
                         El monto de %.2f %s
